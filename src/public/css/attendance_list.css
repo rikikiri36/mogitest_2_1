@@ -1,0 +1,136 @@
+.content{
+  background-color: #F0EFF2;
+}
+
+.list-section{
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+  width: 900px;
+}
+
+.title {
+  font-size: 30PX;
+  font-weight: 700;
+  padding-left: 20px;
+  border-left: 8px solid #000000;
+}
+
+/* 月選択 */
+.select-month{
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 45px auto;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.prev-month, .next-month {
+  font-size: 16px;
+  cursor: pointer;
+  color: #0073CC;
+  padding: 5px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.month-display {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.icon-calendar {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 8px;
+}
+
+.size-6 {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+}
+
+.left-arrow{
+  margin-right: 7px;  
+}
+
+.right-arrow{
+  margin-left: 7px;  
+}
+
+/* 日付一覧 */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+.attendance-table th, .attendance-table td {
+  border: none;
+  color: #737373;
+  padding: 8px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.attendance-table th {
+  font-weight: bold;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.attendance-table tr {
+  border-bottom: 1px solid #E1E1E1;
+  height: 50px;
+}
+
+.attendance-table tr:last-child {
+  border-bottom: none;
+}
+
+.detail__link{
+  color: #0073CC;
+  text-decoration: none;
+}
+
+.btn_area{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.edit__button {
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFF;
+  font-size: 22px;
+  margin-top: 40px;
+  letter-spacing: 0.1em;
+}
+
+.nodata{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 960px) {
+  .list-section{
+    width: 730px;
+  }
+}

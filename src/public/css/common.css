@@ -1,0 +1,158 @@
+html{
+  font-family: Inter;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body, textarea, input {
+  color: #0f0f0f;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ヘッダー */
+.header {
+  display: grid;
+  align-items: center;
+  padding: 16px 0;
+  height: 80px;
+  /* text-align: center; */
+  background-color: #0f0f0f;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap:10px;
+}
+
+.header__logo {
+  grid-column: 1;
+  margin-left: 30px;
+}
+
+.header__logo__image{
+  width: 90%;
+}
+
+.header__search {
+  grid-column: 2;
+  text-align: center;
+}
+
+
+.header__link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
+  grid-column: 3;
+}
+
+.header-logout__btn, 
+.header__link{
+  color: #FFF;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+@media screen and (max-width: 960px) {
+  .header-logout__btn, 
+  .header__link,
+  .header-sell__link,
+  .search__input,
+  input::placeholder{
+    font-size: 16px;
+  }
+}
+              
+/* コンテンツ */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.content__heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+/* ボタン */
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #333333;
+}
+
+.btn__big {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #FFF;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* リンク */
+.link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 成功メッセージ */
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* 失敗メッセージ */
+.alert-error {
+  background-color: #edd4dc;
+  color: #7e0d2f;
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.page-link:hover {
+  background-color: #f0f0f0;
+}
+
+.page-link.current {
+  background-color: #0073CC;
+  color: white;
+  font-weight: bold;
+}
+
+.page-link.disabled {
+  color: #aaa;
+  pointer-events: none;
+  border-color: #eee;
+}

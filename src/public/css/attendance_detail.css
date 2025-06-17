@@ -1,0 +1,145 @@
+.content{
+  background-color: #F0EFF2;
+}
+
+.detail-section{
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+  width: 900px;
+}
+
+.title {
+  font-size: 30PX;
+  font-weight: 700;
+  padding-left: 20px;
+  border-left: 8px solid #000000;
+}
+
+/* 詳細 */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-top: 80px;
+  border-radius: 10px;
+  border: none;
+}
+
+.attendance-table td {
+  border: none;
+  padding: 8px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.attendance-table tr {
+  border-bottom: 1px solid #E1E1E1;
+  height: 90px;
+}
+
+
+
+.attendance-table td.sub_title{
+  color: #737373;
+  width: 30%;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.attendance-table td.td_content {
+  text-align: left;
+  font-weight: 700;
+}
+
+.time__input{
+  border: #D9D9D9 1px solid;
+  border-radius: 4px;
+  padding: 5px 20px;
+  margin-top: 22px;
+  margin-bottom: 2px;
+}
+
+.time-separator {
+  display: inline-block;
+  margin: 0 50px;
+}
+.comment__textarea{
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  border: #D9D9D9 1px solid;
+  border-radius: 5px;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.comment__textarea::placeholder {
+  color: #D9D9D9;
+}
+
+.btn_area{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.edit__button {
+  width: 130px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFF;
+  font-size: 22px;
+  margin-top: 80px;
+  letter-spacing: 0.1em;
+}
+
+.comment__error-message {
+  color: #FF5555;
+  font-size: 14px;
+  min-height: 22px;
+}
+
+/* 承認中 */
+.time__request-disabled{
+  padding: 5px 20px;
+  margin-top: 22px;
+  margin-bottom: 2px;
+}
+
+.comment__textarea_request-disabled{
+  width: 100%;
+  height: 100px;
+  padding: 10px 10px 10px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  display: flex;
+  align-items: center;
+  border-style: none;
+}
+
+.comment__textarea_request-disabled::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.comment__request-message{
+  color: #FF5555;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: right;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 960px) {
+  .detail-section{
+    width: 730px;
+  }
+}

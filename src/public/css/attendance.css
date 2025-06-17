@@ -1,0 +1,85 @@
+.content{
+  background-color: #F0EFF2;
+}
+
+.status-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.status__tab{
+  display: inline-block;
+  background-color: #C8C8C8;
+  border-radius: 50px;
+  color: #696969;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 30px;
+  padding: 9px 0;
+  text-align: center;
+  width: 100px;
+}
+
+.date__tab{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.time__tab{
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.button-container {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.check__button {
+  display: block;
+  width: 220px;
+  height: 80px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000000;
+  color: #FFF;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.rest__button {
+  display: block;
+  width: 220px;
+  height: 80px;
+  border: none;
+  border-radius: 20px;
+  background-color: #FFF;
+  color: #000000;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.rest__button:hover{
+  background-color: #f0f0f0;
+}
+
+.out_message{
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 50px;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .item-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
