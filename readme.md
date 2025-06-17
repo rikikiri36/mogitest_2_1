@@ -21,9 +21,9 @@
 -  DB_DATABASE=laravel_db
 -  DB_USERNAME=laravel_user
 -  DB_PASSWORD=laravel_pass
-3. docker-compose exec php php artisan key:generate
-4. docker-compose exec php php artisan migrate:fresh
-5. docker-compose exec php php artisan db:seed
+3. php artisan key:generate
+4. php artisan migrate:fresh
+5. php artisan db:seed
 
 ## 使用技術
 
